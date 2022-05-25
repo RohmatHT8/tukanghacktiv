@@ -1,0 +1,283 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: roboto;
+   
+}
+
+/* ini navbar */
+.navbar{
+    padding:20px 150px;
+    background-color:#fddebb;
+    display:flex;
+    position:fixed;
+    top:0;
+    width:100%;
+    /* justify-content: space-between; */    
+}
+
+li{
+    display:inline;
+    margin-left:30px;
+}
+
+.list{
+    margin-top:7px;
+}
+
+a {
+    text-decoration:none;
+    color:#855f33;
+}
+
+a:hover{
+    font-weight:bold;
+    color:#3c2408;
+    background-color:white;
+}
+
+/* ini jumbotron */
+
+.jumbotron{
+    display:flex;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+
+.text{
+    padding-top:50px;
+    padding-left:100px;
+    text-align:left;
+}
+
+.text h1{
+    font-size:30px;
+    color:#ff8a00;
+    font-family:impact;
+    letter-spacing: 5px;
+}
+
+.text h2{
+  font-size:50px;
+  color:#3c2408;
+  margin-bottom:15px;
+}
+
+.stabilo{
+    background-color:#ff8a00;
+    width:100px;
+    border-radius:10%;
+}
+
+.button-order{
+    padding:5px 10px;
+    background-color:#fddebb;
+    border:none;
+    border-radius: 5%;
+    margin-top:20px;
+    font-weight:reguler;
+    color:#855f33;
+    font-size:20px;
+}
+.button-order:hover{
+    background-color:#ff8a00;
+}
+    /* ================= */
+
+
+
+    /* ini section tentang kami */
+hr{
+    width:50px;
+    border-bottom:2px solid #3c2408;
+    text-align:center;
+    margin:10px auto;
+}
+.flex{
+    display:flex;
+}
+.flex p {
+    margin-top:60px;
+}
+
+section{
+    margin-bottom:80px;
+}
+
+.tentang-kami{
+    padding-bottom:50px;
+}
+
+    /* ================= */
+
+/* section layanan */
+.card-layanan{
+    width : 300px;
+    height: 250px;
+    border-radius:5%;
+}
+
+.card-layanan:hover{
+    background-color:rgba(255, 254, 140, 0.6);
+}
+
+#layanan{
+    padding-bottom:150px;
+}
+h1{
+    font-size:50px;
+}
+.container-layanan{
+    text-align:center;
+    width: 1000px;
+    margin: 50px auto;
+    /* background-color: #fddebb; */
+    /* border: 3px solid black;  */
+}
+
+
+
+/* akhir section layanan */
+
+.container{
+    text-align:center;
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom:100px;
+    /* border: 3px solid black;  */
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.card{
+    margin:10px 5px;
+    width: 250px;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+    border-radius:5%;
+    overflow:hidden;    
+}
+
+.text-card{
+    padding:5px;
+}
+
+.img{
+    background:white;
+    width:250px;
+    height:200px;
+    background-image: url("/img/Kuli_Bangunan.jpg");
+    background-size: cover;
+}
+.botton{
+    background-color:#fea101;
+    border:none;
+    border-radius:3px;
+    padding: 5px 3px;
+}
+
+
+
+
+/* footer */
+
+.footer-content {
+    width: 100%;
+    height: 400px;
+    background: #ff8a00;
+    position: relative;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 20px;
+    color: black;
+    background: white;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid red;
+}
+
+.footer-content .content-about
+.footer-content .content-social
+.footer-content .content-pesan {
+    width: 30%;
+    height: 400px;
+    position: absolute
+}
+
+.footer-content .content-about h2 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+.footer-content .content-about p {
+    font-style: times new roman;
+    color: white;
+    text-align: center;
+}
+
+.footer-content .content-social {
+    margin-left: 400px;
+}
+
+.footer-content .content-pesan {
+    margin-left: 800px;
+}
+
+.footer-content .content-pesan h2
+.footer-content .content-social h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.footer-content .content-social li {
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.footer-content .content-social li a{
+    text-decoration: none;
+    color: white;
+    font-style: arial;
+}
+
+.footer-content .content-pesan input {
+    display: block;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.footer-content .content-pesan .email {
+    width: 70%;
+}
+
+.footer-content .content-pesan .isi {
+    width: 70%;
+    height: 80%;
+}
+
+.footer-content .content-pesan .btn {
+    padding: 5px;
+
+}
+
+.footer-content .content-pesan .btn:hover {
+    background: lightblue;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-content .content-social li a:hover {
+    margin-left: 10px;
+    color: blueviolet;
+}
