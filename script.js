@@ -123,23 +123,24 @@ const tukang = {
 function render(data){
     let result= data
     let temp=''
-    for(let i=0;i<tukang[result].length;i++)
-    {
-        temp+=`<div class="card mb-3" style="max-width: 1500px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="${tukang[result][i].img}" width='100px' height= '100px' class="card-img" alt="${tukang[result][i].nama}">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title" style="text-align: center;">${tukang[result][i].nama}</h5>
-              <p class="card-text" style="text-align: center;"><span class="fa fa-star checked"></span>${tukang[result][i].rating}</p>
-              <p class="card-text" id="harga" style="text-align: center;">Rp. ${tukang[result][i].harga}</p>
-              <a href="#" class="btn btn-primary" style="float: center;" onclick="tambahkeranjang(['${tukang[result][i].nama}',${tukang[result][i].harga},'${tukang[result][i].img}'])">Add to Cart</a>
+        for(let i=0;i<tukang[result].length;i++)
+        {
+            temp+=`<div class="inline" style="max-width: 1500px;">
+            <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="${tukang[result][i].img}" width='100px' height= '100px' class="card-img" alt="${tukang[result][i].nama}">
             </div>
-          </div>
-        </div>
-      </div>`
-    }
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">${tukang[result][i].nama}</h5>
+                <p class="card-text" style="text-align: center;"><span class="fa fa-star checked"></span>${tukang[result][i].rating}</p>
+                <p class="card-text" id="harga" style="text-align: center;">${tukang[result][i].deskripsi}</p>
+                <p class="card-text" id="harga" style="text-align: center;">Rp. ${tukang[result][i].harga}</p>
+                <a href="#" class="btn btn-primary" style="float: center;" onclick="tambahkeranjang(['${tukang[result][i].nama}',${tukang[result][i].harga},'${tukang[result][i].img}'])">Add to Cart</a>
+                </div>
+            </div>
+            </div>
+        </div>`
+        }
     document.getElementById('content').innerHTML= temp
 }
