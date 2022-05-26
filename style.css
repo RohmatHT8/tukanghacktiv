@@ -281,3 +281,17 @@ h1{
     margin-left: 10px;
     color: blueviolet;
 }
+
+.orderan{
+    padding:0px 8px;
+    margin:30px 0px 0px;
+    background-color:#ffffff;
+    display:flex;
+    top:10;
+    width:100%;
+    justify-content: center
+}
+
+.checked {
+    color: orange;
+  }
