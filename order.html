@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/kuli2.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style/order.css">
+    <title>KULI.com</title>
+</head>
+<body>
+
+<div class="container-modal">
+
+    <img class="image" src="/img/keranjang.png" alt="" width="50px">
+
+    <button type="button" class="count" id="myBtn" ><label id="cartcount"> 0</label></button>
+    
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <table cellspacing="10" cellpading="10">
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Nama Kuli</th>
+                    <th>Harga</th>
+                    <th>Hari</th>
+                    <th>Total Harga</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+             <tbody id="carttable" >
+               
+             </tbody>
+             <tfoot>
+                <tr >
+                    <td colspan="5">Total Harga</td>
+                    <td>Rp. 1500000</td>
+                </tr>
+             </tfoot>
+
+
+          </table>
+          <div>
+            <button type="button" class="btn btn-primary" onclick="checkout()">Check Out</button>
+          </div>
+        </div>
+      
+      </div>
+
+</div>
+<!-- navbar -->
+
+<div class="navbar">
+    <div class="logo">
+        <img src="img/logo.png" alt="" width="70px">
+    </div>
+    <div class="list">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="order.html">Order</a>
+            </li>
+            <li>
+                <a href="">Testimoni</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- akhir navbar -->
+
+
+
+
+<!-- list dibawah nav -->
+    
+<div class="navbar-list">
+    <div class="orderan">
+        <ul>
+            <li>
+                <a>
+                    <span id="SpecialistTembok"  onclick="render(id)">
+                        Spesialis Tembok
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span  id="SpesialisAtap" onclick="render(id)">
+                        Spesialis Atap
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span  id="SpesialisSemen" onclick="render(id)">
+                        Spesialis Semen
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span  id="SpesialisCat" onclick="render(id)">
+                        Spesialis Cat
+                    </span>
+        
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span  id="SpesialisPintuJendela" onclick="render(id)">
+                        Spesialis Pintu dan Jendela
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<section id="content" class="container order cards">
+    
+        <!-- <div class="card">
+            <div class="img">
+                <img src="img/assetkuli/1.jpg" alt="" width="100%">
+            </div>
+            <div class="text-card">
+                <h3>Spesifikasi</h3>
+                <p><span class="par">Lorem ipsum, dolor sit amet consectetur<br>Lorem ipsum dolor sit amet consectetur.</span></p>
+                <input type="button" value="Booking" class="botton-card">
+            </div>
+        </div>  
+           -->
+    
+</section>
+
+
+<!-- akhir list di bawah nav -->
+<script src="script.js"></script>
+<!-- <script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+</body>
+</html>
