@@ -14,37 +14,24 @@
     <title>KULI.com</title>
 </head>
 <body>
-<section>
-    <div class="navbar" onscroll="fixedNav()">
-        <div class="logo">
-            <img src="/img/logo.png" alt="" width="70px">
 
-        </div>
-        <div class="list">
-            <ul>
-                <li>
-                    <a href="index.html">Tentang</a>
-                </li>
-                <li>
-                    <a href="">Layanan</a>
-                </li>
-                <li>
-                    <a href="">Order</a>
-                </li>
-                <li>
-                    <a href="">Testimoni</a>
-                </li>
-            </ul>
-        </div>
+<button type="button" id="myBtn" ><label id="cartcount"> 0</label></button>
+
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <table id="carttable">
+        
+      </table>
+      <div>
+        <button type="button" class="btn btn-primary" onclick="checkout()">Check Out</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
     </div>
-</section>
-<!-- <a href="www.mysite.com" onclick="return theFunction();">Item</a>
-
-<script type="text/javascript">
-    function theFunction () {
-        // return true or false, depending on whether you want to allow the `href` property to follow through or not
-    }
-</script> -->
+  
+  </div>
+  
     
 <section id="order" class="container order">
     <h1>Order</h1>
@@ -88,34 +75,12 @@
             </li>
         </ul>
         </div>
+
+       
+
     <div id="content"><div class="card mb-3" style="max-width: 1500px;"></div>
 </section>
-    <footer>
-        <div class="footer-content">
-            <div class="content-about">
-                <h2>KULI.COM</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolor sed tempore tenetur laudantium molestiae? Obcaecati exercitationem sed dolorum totam, sapiente ex fuga sunt ullam eum cum rem laboriosam sequi eligendi voluptas accusantium? Mollitia necessitatibus dolore deleniti saepe similique! Dicta.</p>
-            </div>
-            <div class="content-social"></div>
-            <h2>Kunjungi Kami</h2>
-            <ul>
-                <li><a href="#">Instagram @kulidotcom</a></li>
-                <li><a href="#">Facebook Kuli dot com</a></li>
-                <li><a href="#">Twitter @kuli.com</a></li>
-            </ul>
-            <div class="content-pesan">
-                <h2>Terhubung dengan Update Terbaru Kami!</h2>
-                <form action="#">
-                    <input class="email" type="text" placeholder="email" required="masukkan email">
-                    <input class="isi" type="text" placeholder="isi pesan disini!">
-                    <input class="btn" type="button" value="Send">
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy 2022 KULI.COM | Design by Hackathon Group 4
-        </div>
-    </footer>
+
 <script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
