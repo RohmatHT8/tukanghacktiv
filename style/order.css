@@ -28,10 +28,7 @@
     color:#2e2a22;
 }
 
-.text-bold {
-    font-weight:bold;
-    text-decoration:underline;
-}
+
 
 .container{
     text-align:center;
@@ -169,6 +166,7 @@
       border: none;
       color:#ffdbc4;
       font-weight:bold;
+      cursor:pointer;
   }
 
 .container-modal .image{
@@ -177,10 +175,13 @@
     right:135px;
 }
 
+
+
 .btn {
     border:none;
     padding:5px 5px;
     margin:3px;
+    border-radius:3px;
 }
 .btn-primary {
     background-color:#69ce3c;
@@ -256,4 +257,9 @@ hr {
 
 .deskripsi {
     font-size:10px;
+}
+
+.text-bold {
+    font-weight:bold;
+    text-decoration:underline;
 }

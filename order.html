@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="style/order.css">
     <title>KULI.com</title>
 </head>
@@ -18,9 +17,12 @@
 
 <div class="container-modal">
 
-    <img class="image" src="/img/keranjang.png" alt="" width="50px">
 
-    <button type="button" class="count" id="myBtn" ><label id="cartcount"> 0</label></button>
+    <div id="checkoutimg">
+        <img class="image" src="/img/keranjang.png" alt="" width="50px">
+        <button type="button" class="count" id="myBtn" ><label id="cartcount"> 0</label></button>
+    </div>
+
     
     <div id="myModal" class="modal">
         <!-- Modal content -->
@@ -101,14 +103,11 @@
     </div>
     <div class="list">
         <ul>
-            <li>
+            <li class="sub-menu" id="home" onclick="onClickMainMenu('home')">
                 <a href="index.html">Home</a>
             </li>
-            <li>
-                <a href="order.html">Order</a>
-            </li>
-            <li>
-                <a href="">Testimoni</a>
+            <li class="sub-menu"  id="order" onclick="onClickMainMenu('order')">
+                <a href="#">Order</a>
             </li>
         </ul>
     </div>
@@ -126,28 +125,28 @@
         <ul>
             <li>
                 <a>
-                    <span id="SpecialistTembok" class="text-bold" onclick="render(id)">
+                    <span id="SpecialistTembok" class="list-item" onclick="render(id)">
                         Spesialis Tembok
                     </span>
                 </a>
             </li>
             <li>
                 <a>
-                    <span  id="SpesialisAtap" onclick="render(id)">
+                    <span  id="SpesialisAtap" class="list-item" onclick="render(id)">
                         Spesialis Atap
                     </span>
                 </a>
             </li>
             <li>
                 <a>
-                    <span  id="SpesialisSemen" onclick="render(id)">
+                    <span  id="SpesialisSemen"  class="list-item" onclick="render(id)">
                         Spesialis Semen
                     </span>
                 </a>
             </li>
             <li>
                 <a>
-                    <span  id="SpesialisCat" onclick="render(id)">
+                    <span  id="SpesialisCat" class="list-item" onclick="render(id)">
                         Spesialis Cat
                     </span>
         
@@ -155,7 +154,7 @@
             </li>
             <li>
                 <a>
-                    <span  id="SpesialisPintuJendela" onclick="render(id)">
+                    <span  id="SpesialisPintuJendela" class="list-item" onclick="render(id)">
                         Spesialis Pintu dan Jendela
                     </span>
                 </a>
@@ -183,6 +182,7 @@
     <p>--&copy 2022 KULI.COM | Design by Hackathon Group 4--</p>
 </div>
 <!-- akhir list di bawah nav -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script.js"></script>
 <!-- <script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->

@@ -38,6 +38,13 @@
     background-color:white;
 }
 
+.active {
+    font-weight:bold;
+    color:#3c2408;
+    background-color:white;
+}
+
+
 /* akhir navbar */
 
 #jumbotron{

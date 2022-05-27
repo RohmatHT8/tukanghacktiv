@@ -231,9 +231,19 @@ const tukang = {
 }
 
 
+let activeLink = ''
 
 function render(data){
-    let result= data
+    activeLink = data
+    let listMenu = document.getElementsByClassName('list-item')
+    for(let i = 0; i < listMenu.length; i++){
+        if(listMenu[i].id === data){
+            listMenu[i].style.fontWeight='bold'
+        }else{
+            listMenu[i].style.fontWeight='normal'
+        }
+    }
+    let result = data
     let temp=''
         for(let i=0;i<tukang[result].length;i++)
         {   
@@ -328,7 +338,12 @@ let span = document.getElementsByClassName('close')[0]
 btn.onclick = function()
 {
     if(document.getElementById('cartcount').innerText === '0'){
-        alert('Tidak ada order, Silahkan Order')
+        // alert('Tidak ada order, Silahkan Order')
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Tidak ada order, Silahkan Order',
+          })
     }else{
     modal.style.display='block';
     }
@@ -363,13 +378,34 @@ function minusqty(item){
 
 function checkout(){
     keranjang = {}
-    if(document.getElementById('cartcount').innerText === '0'){
-        alert('Tidak ada order, Silahkan Order')}
-        else{
-    alert("Check Out Berhasil")
-    cekcount()
-    togglecart()
-    modal.style.display='none'
-        }
+    if (document.getElementById('cartcount').innerText === '0'){
+        // alert('Tidak ada order, Silahkan Order')
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Tidak ada order, Silahkan Order',
+          })
+    } else {
+        // alert("Check Out Berhasil")
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil !!!',
+            text: 'Terimakasih Sudah Order',
+          })
+        cekcount()
+        togglecart()
+        modal.style.display='none'
+    }
 }
 
+function onClickMainMenu(id){
+    let subMenu = document.getElementsByClassName('sub-menu')
+    console.log(id)
+    for(let i = 0; i < subMenu.length; i++){
+        if(subMenu[i].id === id){
+            subMenu[id].style.fontWeight='bold'
+        }else{
+            subMenu[id].style.fontWeight='normal'
+        }
+    }
+}
