@@ -7,15 +7,20 @@
 } */
 .navbar-list{
     text-align:center;
-    /* padding:5px 3px; */
-    border-botom: 2px solid #ddd;
-    margin-top:3px;
+    padding:0;
+    border: 2px solid #ddd;
+    background-color:#efebeb;
+    position:fixed;
+    width:100%;
+    top:70px;
+    z-index:1;
 }
 
 .navbar-list li {
     display:inline;
     margin-left:30px;
     cursor:pointer;
+    
    
 }
 
@@ -27,16 +32,6 @@
     font-weight:bold;
     text-decoration:underline;
 }
-
-/* .inline {
-    display: inline-block;
-    margin:20px;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid rgb(0, 0, 0);    
-
-  } */
 
 .container{
     text-align:center;
@@ -51,7 +46,10 @@
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
-    padding:5px 5px;
+    margin-top:150px;
+    margin-bottom:70px;
+    
+
 }
 
 .card{
@@ -154,6 +152,7 @@
 
 .container-modal{
     position:relative;
+    z-index:999;
 }
 .container-modal .count{
       position:fixed;
@@ -172,13 +171,74 @@
     right:135px;
 }
 
-
 .btn {
     border:none;
-
+    padding:5px 5px;
+    margin:3px;
 }
 .btn-primary {
-    background-color:green;
-    padding:5px 5px;
+    background-color:#69ce3c;
+    margin-left:10px;
+    border-radius:5px;
+    color:white;
 }
 
+.btn-primary:hover,
+.btn-plus:hover {
+   cursor:pointer;
+   background-color:#39761e;
+}
+
+.btn-plus {
+    background-color:#69ce3c;
+    color:white;
+}
+
+.btn-minus {
+    padding:5px 7px; 
+    color:white;
+    background-color:#dd0909;
+}
+
+.btn-danger {
+    color:white;
+    background-color:#dd0909;
+}
+
+.btn-danger:hover,
+.btn-minus:hover {
+   cursor:pointer;
+   background-color:#9c0707;
+}
+
+.img-table{
+    border-radius:10px;
+}
+
+.card-modal {
+    text-align:center;
+    width: 200px;
+    height:250px;
+    border-radius:5%;
+    overflow:hidden;
+    transition: 0.3s;
+    margin-top:10px;
+    border:1px solid grey;
+    display: inline-block
+}
+.total-harga{
+    background-color:#39761e;
+    color:white;
+    margin:5px auto;
+    padding:5px;
+}
+
+.btn-checkout{
+   padding:10px 10px;
+   margin-top: 12px;
+   border:none;
+}
+#grand-total{
+    margin-left:10px;
+    margin-top:10px;
+}

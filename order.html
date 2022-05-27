@@ -26,7 +26,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
-          <table cellspacing="10" cellpading="10">
+          <!-- <table cellspacing="10" cellpading="10">
             <thead>
                 <tr>
                     <th>Gambar</th>
@@ -40,20 +40,55 @@
              <tbody id="carttable" >
                
              </tbody>
-             <tfoot>
-                <tr >
-                    <td colspan="5">Total Harga</td>
-                    <td>Rp. 1500000</td>
-                </tr>
-             </tfoot>
+             
 
 
           </table>
           <div>
-            <button type="button" class="btn btn-primary" onclick="checkout()">Check Out</button>
-          </div>
-        </div>
+            <button type="button" class="btn btn-checkout" onclick="checkout()">Check Out</button>
+          </div> -->
       
+               <div id="carttable">
+
+
+               </div>
+                   <!-- <div class="card-modal">
+                      <img src="/img/assetkuli/1.jpg" alt="" width="120px">
+                      <h4>Nando</h3>
+                      <p>50000</p>
+                      <p>Hari : 1</p>
+                      <p class="total-harga">Total Harga : 50000</p>
+                      <button type="button" class="btn btn-plus">+</button>
+                      <button type="button" class="btn btn-minus">-</button>
+                      <button class="btn btn-danger">Remove</button>
+                   </div>
+                   
+                   <div class="card-modal">
+                    <img src="/img/assetkuli/1.jpg" alt="" width="120px">
+                    <h4>Nando</h3>
+                    <p>50000</p>
+                    <p>Hari : 1</p>
+                    <p class="total-harga">Total Harga : 50000</p>
+                    <button type="button" class="btn btn-plus">+</button>
+                    <button type="button" class="btn btn-minus">-</button>
+                    <button class="btn btn-danger">Remove</button>
+                 </div> -->
+                
+               
+
+                 <!-- <div id="grand-total">
+                   
+                 </div> -->
+               
+
+                 <div id="grand-total">
+                 </div>
+                  <div>
+                    <button type="button" class="btn-checkout btn-primary" onclick="checkout()">Check Out</button>
+                  </div>
+      
+        </div>
+        
       </div>
 
 </div>
@@ -90,7 +125,7 @@
         <ul>
             <li>
                 <a>
-                    <span id="SpecialistTembok"  onclick="render(id)">
+                    <span id="SpecialistTembok" class="text-bold" onclick="render(id)">
                         Spesialis Tembok
                     </span>
                 </a>
@@ -143,7 +178,9 @@
     
 </section>
 
-
+<div class="text-footer">
+    <p>--&copy 2022 KULI.COM | Design by Hackathon Group 4--</p>
+</div>
 <!-- akhir list di bawah nav -->
 <script src="script.js"></script>
 <!-- <script src="script.js"></script>

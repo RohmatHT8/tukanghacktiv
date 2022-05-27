@@ -152,6 +152,7 @@ function tambahkeranjang(arr){
             price: arr[1],
             img: arr[2],
             hari: 1
+            
         }
     }
     togglecart();
@@ -168,14 +169,35 @@ function cekcount(){
 }
 function togglecart(){
     let cart = document.getElementById('carttable')
-   
+    
+    let grandTotal = 0
     let barang =''
     for (let i in keranjang){
+
         let total = keranjang[i].price*keranjang[i].hari
-        barang+=`<tr><td><img src='${keranjang[i].img}'width = "100px"></td><td>${i}</td><td>${keranjang[i].price}</td>
-        <td>${keranjang[i].hari}</td><td>${total}</td><td><button type="button" class="btn btn-plus" onclick="plusqty('${i}')">+</button><button type="button" class="btn btn-minus" onclick="minusqty('${i}')">-</button><button class="btn btn-danger" onclick="removeitem('${i}')">Remove</button>`
+        grandTotal += total
+
+        barang += ` <div class="card-modal">
+        <img src='${keranjang[i].img}' alt="" width="120px">
+        <h4>${i}</h3>
+        <p>${keranjang[i].price}</p>
+        <p>Hari : ${keranjang[i].hari}</p>
+        <p class="total-harga">Total Harga : ${total}</p>
+        <button type="button" class="btn btn-plus" onclick="plusqty('${i}')">+</button>
+        <button type="button" class="btn btn-minus" onclick="minusqty('${i}')">-</button>
+        <button class="btn btn-danger" onclick="removeitem('${i}')">Remove</button>
+     </div>`
+
+        // barang+=`<tr><td><img src='${keranjang[i].img}' class="img-table" width = "100px"></td><td>${i}</td><td>${keranjang[i].price}</td>
+        // <td>${keranjang[i].hari}</td><td>${total}</td><td><button type="button" class="btn btn-plus" onclick="plusqty('${i}')">+</button><button type="button" class="btn btn-minus" onclick="minusqty('${i}')">-</button><button class="btn btn-danger" onclick="removeitem('${i}')">Remove</button>
+        // `
+ 
 
     }
+    
+    document.getElementById('grand-total').innerHTML = `<p class="grey">Total Bayar</p>
+                                                        <h3 class="orange">Rp. ${grandTotal}</h3>`
+
     cart.innerHTML=barang
 }
 function removeitem(item){
