@@ -1,117 +1,233 @@
+// const tukang = {
+//     SpecialistTembok:[
+//         {
+//             nama:'Aji',
+//             rating:4.5,
+//             harga:50000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Ando',
+//             rating:5,
+//             harga:500000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Aiueo',
+//             rating:1.5,
+//             harga:5000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'}],
+//     SpesialisAtap:[
+//         {
+//             nama:'Aji',
+//             rating:4.5,
+//             harga:50000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Ando',
+//             rating:5,
+//             harga:500000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/test.png'},
+//         {
+//             nama:'Aiueo',
+//             rating:1.5,
+//             harga:5000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Amsiong',
+//             rating:3.5,
+//             harga:55000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'}],
+//     SpesialisSemen:[
+//         {
+//             nama:'Aji',
+//             rating:4.5,
+//             harga:50000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Ando',
+//             rating:5,
+//             harga:500000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Amsiong',
+//             rating:3.5,
+//             harga:55000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'}],
+//     SpesialisCat:[
+//         {
+//             nama:'Aji',
+//             rating:4.5,
+//             harga:50000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Ando',
+//             rating:5,
+//             harga:500000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Aiueo',
+//             rating:1.5,
+//             harga:5000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Auoououo',
+//             rating:2.5,
+//             harga:5000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Amsiong',
+//             rating:3.5,
+//             harga:55000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'}],
+//     SpesialisPintuJendela:[
+//         {
+//             nama:'Aji',
+//             rating:4.5,
+//             harga:50000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Abababa',
+//             rating:1.5,
+//             harga:5000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'},
+//         {
+//             nama:'Amsiong',
+//             rating:3.5,
+//             harga:55000,
+//             deskripsi:'pekerja keras dan rajin menabung',
+//             img : 'img/assetkuli/1.jpg'}]
+// }
+
 const tukang = {
     SpecialistTembok:[
         {
             nama:'Aji',
             rating:4.5,
-            harga:50000,
-            deskripsi:'pekerja keras dan rajin menabung',
+            harga:95000,
+            deskripsi:'Kemampuan menyemen bata dan kemampuan lainnya bisa membuat rumah anda sekokoh tembok cina',
             img : 'img/assetkuli/1.jpg'},
         {
-            nama:'Ando',
+            nama:'Akmal',
             rating:5,
-            harga:500000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            harga:120000,
+            deskripsi:'Kemampuan menyusun bata dan ngaduk semen tingkat dewa, dan teknik memasang atap ala Spiderman',
+            img : 'img/assetkuli/2.jpg'},
         {
-            nama:'Aiueo',
-            rating:1.5,
-            harga:5000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'}],
+            nama:'Fahrul',
+            rating:4,
+            harga:80000,
+            deskripsi:'Kemampuan bekerja standar tpi bisa menyesuaikan kemauan anda untuk rumah yang anda butuhkan',
+            img : 'img/assetkuli/3.jpg'}],
     SpesialisAtap:[
         {
             nama:'Aji',
             rating:4.5,
-            harga:50000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            harga:95000,
+            deskripsi:'Kemampuan menyemen bata dan kemampuan lainnya bisa membuat rumah anda sekokoh tembok cina',
+            img : 'img/assetkuli/6.jpg'},
         {
-            nama:'Ando',
+            nama:'Akmal',
             rating:5,
-            harga:500000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/test.png'},
+            harga:120000,
+            deskripsi:'Kemampuan menyusun bata dan ngaduk semen tingkat dewa, dan teknik memasang atap ala Spiderman',
+            img : 'img/assetkuli/4.jpg'},
         {
-            nama:'Aiueo',
-            rating:1.5,
-            harga:5000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            nama:'Fahrul',
+            rating:4,
+            harga:80000,
+            deskripsi:'Kemampuan bekerja standar tpi bisa menyesuaikan kemauan anda untuk rumah yang anda butuhkan',
+            img : 'img/assetkuli/7.jpg'},
         {
-            nama:'Amsiong',
-            rating:3.5,
-            harga:55000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'}],
+            nama:'Fahmi',
+            rating:3,
+            harga:70000,
+            deskripsi:'Kemampuan pekerja standard, namun dapat memberi konsep rumah yang standard seperti kemampuan yang dia punya',
+            img : 'img/assetkuli/2.jpg'}],
     SpesialisSemen:[
         {
             nama:'Aji',
             rating:4.5,
-            harga:50000,
-            deskripsi:'pekerja keras dan rajin menabung',
+            harga:95000,
+            deskripsi:'Kemampuan menyemen bata dan kemampuan lainnya bisa membuat rumah anda sekokoh tembok cina',
             img : 'img/assetkuli/1.jpg'},
         {
-            nama:'Ando',
+            nama:'Akmal',
             rating:5,
-            harga:500000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            harga:120000,
+            deskripsi:'Kemampuan menyusun bata dan ngaduk semen tingkat dewa, dan teknik memasang atap ala Spiderman',
+            img : 'img/assetkuli/2.jpg'},
         {
-            nama:'Amsiong',
-            rating:3.5,
-            harga:55000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'}],
+            nama:'Fahmi',
+            rating:3,
+            harga:70000,
+            deskripsi:'Kemampuan pekerja standard, namun dapat memberi konsep rumah yang standard seperti kemampuan yang dia punya',
+            img : 'img/assetkuli/3.jpg'}],
     SpesialisCat:[
         {
             nama:'Aji',
             rating:4.5,
-            harga:50000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            harga:95000,
+            deskripsi:'Kemampuan menyemen bata dan kemampuan lainnya bisa membuat rumah anda sekokoh tembok cina',
+            img : 'img/assetkuli/4.jpg'},
         {
             nama:'Ando',
             rating:5,
-            harga:500000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            harga:120000,
+            deskripsi:'Kemampuan menyusun bata dan ngaduk semen tingkat dewa, dan teknik memasang atap ala Spiderman',
+            img : 'img/assetkuli/5.jpg'},
         {
-            nama:'Aiueo',
-            rating:1.5,
-            harga:5000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            nama:'Fahrul',
+            rating:4,
+            harga:80000,
+            deskripsi:'Kemampuan bekerja standar tpi bisa menyesuaikan kemauan anda untuk rumah yang anda butuhkan',
+            img : 'img/assetkuli/6.jpg'},
         {
-            nama:'Auoououo',
-            rating:2.5,
-            harga:5000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
-        {
-            nama:'Amsiong',
+            nama:'Andrian',
             rating:3.5,
-            harga:55000,
-            deskripsi:'pekerja keras dan rajin menabung',
+            harga:75000,
+            deskripsi:'Spesialis cat rumah impian anda, memberi warna rumah yang baik untuk hidup anda yang kurang berwarnna ',
+            img : 'img/assetkuli/7.jpg'},
+        {
+            nama:'Fahmi',
+            rating:3,
+            harga:70000,
+            deskripsi:'Kemampuan pekerja standard, namun dapat memberi konsep rumah yang standard seperti kemampuan yang dia punya',
             img : 'img/assetkuli/1.jpg'}],
     SpesialisPintuJendela:[
         {
             nama:'Aji',
             rating:4.5,
-            harga:50000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            harga:95000,
+            deskripsi:'Kemampuan menyemen bata dan kemampuan lainnya bisa membuat rumah anda sekokoh tembok cina',
+            img : 'img/assetkuli/3.jpg'},
         {
-            nama:'Abababa',
+            nama:'Lorien',
             rating:1.5,
-            harga:5000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'},
+            harga:50000,
+            deskripsi:'Tidak mempunyai kemampuan spesifik, hanya sebagai asisten tambahan untuk pekerja lainnya',
+            img : 'img/assetkuli/2.jpg'},
         {
-            nama:'Amsiong',
-            rating:3.5,
-            harga:55000,
-            deskripsi:'pekerja keras dan rajin menabung',
-            img : 'img/assetkuli/1.jpg'}]
+            nama:'Fahmi',
+            rating:3,
+            harga:70000,
+            deskripsi:'Kemampuan pekerja standard, namun dapat memberi konsep rumah yang standard seperti kemampuan yang dia punya',
+            img : 'img/assetkuli/7.jpg'}]
 }
 
 
@@ -129,7 +245,7 @@ function render(data){
            <div class="text-card">
                <h3>${tukang[result][i].nama}</h3>
                <p><span class="fa fa-star checked"></span>${tukang[result][i].rating}</p>
-               <p>${tukang[result][i].deskripsi}</p>
+               <p class="deskripsi">${tukang[result][i].deskripsi}</p>
                <p>Rp. ${tukang[result][i].harga}</p>
                <div class="botton-card"><a href="#"  onclick="tambahkeranjang(['${tukang[result][i].nama}',${tukang[result][i].harga},'${tukang[result][i].img}'])">Add to Cart</a></div>
                 </div>  
@@ -212,7 +328,7 @@ let span = document.getElementsByClassName('close')[0]
 btn.onclick = function()
 {
     if(document.getElementById('cartcount').innerText === '0'){
-        alert('Mohon di Beli dulu!')
+        alert('Tidak ada order, Silahkan Order')
     }else{
     modal.style.display='block';
     }
@@ -248,7 +364,7 @@ function minusqty(item){
 function checkout(){
     keranjang = {}
     if(document.getElementById('cartcount').innerText === '0'){
-        alert('Mohon di Beli dulu!')}
+        alert('Tidak ada order, Silahkan Order')}
         else{
     alert("Check Out Berhasil")
     cekcount()
